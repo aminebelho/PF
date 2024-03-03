@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./assets/TiltNeon-Regular.ttf') format('truetype'); /* Specify the path to your TTF font file */
+  font-weight: normal;
+  font-style: normal;
+  
+}
+.App {
+  width: 100%;
+  /* background-color: #f1f1f1ff; */
+  font-family: 'CustomFont', sans-serif;
+  background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* font-family: cursive; */
+}
+
+.content {
+  margin: 3% 5%;
+  padding: 2%;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 2% 3%;
+    padding: 1%;
+    /* height: auto;  */
+  }
+  /* .App{
+    height: 225vh;
+  } */
+}
+

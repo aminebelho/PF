@@ -1,0 +1,142 @@
+*{
+  font-weight:bold;
+}
+.header {
+  background-color: #12192c;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 2%;
+  font-size: 24px;
+}
+
+.navleft {
+  width: 25%;
+}
+.navright{
+  width: 75%;
+  overflow: hidden;
+  display: flex;
+  /* float: inline-end; */
+  justify-content: end;
+}
+.navelt {
+  padding: 2%;
+  display: flex;
+  padding: 1% 2%;
+  float: right;
+}
+
+.navelt:hover {
+  background-color: rgb(183, 33, 255);
+}
+
+.navelt:hover a {
+  color: #fff;
+}
+
+.navright a {
+  float: right;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(183, 33, 255);
+  font-size: 1.3rem;
+}
+
+
+
+@media screen and (min-width: 792px) {
+  .icon  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 792px) {
+  .navright a {display: none;}
+  .icon a {
+    float: right;
+    display: block;
+  }
+  .navright{
+    width: 50%;
+    /* height: 5vh; */
+  }
+  .navleft{
+    align-items: center;
+    display: flex;
+    width: 50%;
+    height: 5vh;
+
+  }
+  .header svg {
+    height: 5vh;
+    width: 3vh;
+    color: rgb(183, 33, 255);
+    margin-right: 8%;
+  }
+
+
+  .navleft.responsive {
+    display: none;
+  }
+
+  .navright.responsive {
+    width: 100%;
+    position: relative;
+    margin: 0px 0%;
+    display: grid;
+    justify-content: center;
+    height: auto;
+    padding: inherit;
+  }
+  .navright.responsive.navelt{
+    width: 100%;
+  }
+  .navright.responsive.icon a {
+    position: absolute;
+  }
+  .navright.responsive a {
+    float: none;
+    padding: 1rem;
+    display: flex;
+    text-align: left;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(183, 33, 255);
+  }
+
+  .navelt {
+    height: 5vh;
+    /* width: 20%; */
+    /* padding: 2%; */
+    display: flex;
+    padding: 0;
+    /* float: right; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navright.responsive.navelt:hover {
+    background-color: rgb(183, 33, 255);
+  }
+  .navelt:hover svg {
+    color: #fff;
+  }
+  
+  .navelt:hover a {
+    color: #fff;
+  }
+  .icon {
+    padding: 5%;
+  }
+  
+
+}
+

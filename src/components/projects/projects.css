@@ -1,0 +1,268 @@
+.projects {
+  overflow-y: auto;
+  background: #12192c;
+  border-radius: 12px;
+}
+
+.project {
+  color: aliceblue;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 1rem 0;
+  border-radius: 5px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
+
+}
+
+.project h1 {
+  font-size: 2rem;
+  margin: 0.6rem 0 0.6rem 0;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(183, 33, 255);
+}
+
+.details h2 {
+  width: fit-content;
+  font-size: 2rem;
+  margin: 0.6rem 0 0.6rem 0;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(183, 33, 255);
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.details h3 {
+  color: rgb(183, 33, 255);
+  width: fit-content;
+  font-size: 1.3rem;
+  margin: 0.6rem 0 0.6rem 0;
+  line-height: 1.2;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid rgb(183, 33, 255);
+}
+
+.details p {
+  font-weight: 300;
+  opacity: 0.8;
+  text-align: start;
+}
+
+
+.project-image {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0.5);
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.project-tools {
+  font-style: italic;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(204, 204, 204);
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.active {
+  transform: scale(1.5);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+
+
+.btn-class-name {
+  --color: 183,33, 255;  
+  background-color: rgba(var(--color), .2);
+  color: rgb(var(--color));
+  fill: rgb(var(--color));
+  border-radius: .5em;
+  transition: .3s;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: 2px solid rgb(var(--color));
+  box-shadow: 0 0 10px rgba(var(--color), .4);
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: .5em 1em;
+}
+
+.btn-class-name:hover {
+  box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+
+.btn-class-name span {
+  transform: scale(.8);
+  transition: .3s;
+}
+
+.btn-class-name:hover span {
+  transform: scale(1);
+}
+
+.btn-class-name svg {
+  font-size: 0;
+  transform: scale(0.5) translateX(0%) rotate(-180deg);
+  transition: .3s;
+}
+
+.btn-class-name:hover svg {
+  font-size: 20px;
+  transform: scale(1) translateX(20%) rotate(0deg);
+}
+
+.btn-class-name:active {
+  transition: 0s;
+  box-shadow: 0 0 0 5px rgb(var(--color));
+}
+
+.btn-class-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-class-name svg {
+  margin-right: 8px;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.see-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-see-more {
+  --color: 233, 233, 233;
+  border-radius: .5em;
+  transition: .3s;
+  background-color: rgba(var(--color), .2);
+  color: rgb(var(--color));
+  fill: rgb(var(--color));
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: 2px solid rgb(var(--color));
+  box-shadow: 0 0 10px rgba(var(--color), .4);
+  outline: none;
+  padding: .5em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-see-more:hover {
+  box-shadow: 0 0 0 5px rgba(var(--color), .5);
+}
+
+.btn-see-more span {
+  transform: scale(.8);
+  transition: .3s;
+}
+
+.btn-see-more:hover span {
+  transform: scale(1);
+}
+
+.btn-see-more svg {
+  font-size: 0;
+  transform: scale(0.5) translateX(0%) rotate(-180deg);
+  transition: .3s;
+  margin-right: 8px;
+}
+
+.btn-see-more:hover svg {
+  font-size: 20px;
+  transform: scale(1) translateX(20%) rotate(0deg);
+}
+
+.btn-see-more:active {
+  transition: 0s;
+  box-shadow: 0 0 0 5px rgb(var(--color));
+}
+
+
+
+.details {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  text-align: start;
+}
+
+.details p {
+  padding: 2% 0;
+}
+
+.photos {
+  display: block;
+}
+
+.photos img {
+  width: 33%;
+  padding: 1%;
+}
+
+@media screen and (max-width: 792px) {
+  .project-image{
+    padding: 5% 0;
+    max-width: 90%;
+  }
+  .details {
+    padding: 5% 0;
+    max-width: 90%;
+  }
+  .photos img {
+    width: 48%;
+    padding: 1%;
+}
+}
