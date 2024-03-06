@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Projects.css";
+import "./projects.css";
 import { FaEye } from "react-icons/fa";
 import ajout from "../../assets/son/ajout.png";
 import bilan from "../../assets/son/bilan.png";
