@@ -229,6 +229,43 @@
   box-shadow: 0 0 0 5px rgb(var(--color));
 }
 
+video{
+  width: 100%;
+  height: auto;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.play-button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.play-button-overlay::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent white;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
 
 
 .details {

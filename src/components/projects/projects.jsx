@@ -11,15 +11,21 @@ import parametres from "../../assets/son/parametres.png";
 import plan from "../../assets/son/plan.png";
 import prevision from "../../assets/son/prevision.png";
 import tbf from "../../assets/son/tbf.png";
-import portfolio from "../../assets/portfolio/portfolio.png";
+import pf1 from "../../assets/portfolio/pf1.png";
+import pf2 from "../../assets/portfolio/pf2.png";
+import pf3 from "../../assets/portfolio/pf3.png";
+import pf4 from "../../assets/portfolio/pf4.png";
+import respPF from "../../assets/portfolio/respPF(1).mp4";
 
 const projectsData = [
   {
     id: 1,
     time: 7000,
     name: "Portfolio",
-    image: [portfolio],
-    description: "Welcome to my personal portfolio website, where I showcase my skills, projects, and experience. Feel free to explore and learn more about my work.  If you have any questions or inquiries, don't hesitate to contact me. I'm here to help.",
+    image: [pf1, pf2, pf3, pf4],
+    video: respPF,
+    description:
+      "Welcome to my personal portfolio website, where I showcase my skills, projects, and experience. Feel free to explore and learn more about my work.  If you have any questions or inquiries, don't hesitate to contact me. I'm here to help.",
   },
   {
     id: 2,
@@ -48,7 +54,7 @@ const Projects = () => {
   const [isAutoScrollEnabled, setIsAutoScrollEnabled] = useState(true);
   const [showDetails, setShowDetails] = useState(false);
 
-  var cont = document.getElementsByClassName("content")
+  var cont = document.getElementsByClassName("content");
 
   const toggleDetails = (e) => {
     e.preventDefault();
@@ -86,6 +92,11 @@ const Projects = () => {
     );
   };
 
+  const playVideo = () => {
+    const video = document.getElementById("projectVideo");
+    video.play();
+  };
+
   return (
     <div className="projects">
       <div className="project">
@@ -106,7 +117,7 @@ const Projects = () => {
         </div>
         {showDetails && (
           <div className="details">
-          <h2>{projectsData[currentProjectIndex].name}</h2>
+            <h2>{projectsData[currentProjectIndex].name}</h2>
             <p>{projectsData[currentProjectIndex].description}</p>
             <div className="photos-section">
               <h3>Images</h3>
@@ -120,9 +131,36 @@ const Projects = () => {
                   />
                 ))}
               </div>
+              {projectsData[currentProjectIndex].video && (
+                <>
+                  <h3>Videos</h3>
+                  <div className="photos">
+                    <div className="video-container">
+                      <video
+                        id="projectVideo"
+                        src={projectsData[currentProjectIndex].video}
+                        type="video/mp4"
+                        onClick={playVideo}
+                      ></video>
+                      <div className="play-button-overlay" onClick={playVideo}>
+                        {/* Play button SVG */}
+                        <svg
+                          viewBox="0 0 448 512"
+                          height="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#fff"
+                        >
+                          <path d="M432 237L48 7c-18-10-40 3-40 23v452c0 20 22 33 40 23l384-230c18-11 18-41 0-52z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         )}
+
         <div className="controls">
           {/* Previous button */}
           <button className="btn-class-name" onClick={scrollPrev}>

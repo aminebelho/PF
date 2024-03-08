@@ -1,9 +1,16 @@
 import React from "react";
 import "./header.css";
 import { FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Header = () => {
+  const navLinks = [
+    { text: "Home", sectionId: "home" },
+    { text: "About", sectionId: "about" },
+    { text: "Projects", sectionId: "projects" },
+    { text: "Skills", sectionId: "skills" },
+    { text: "Contact", sectionId: "footer" }
+  ];
+
   function myFunction() {
     var hd = document.getElementsByClassName("header");
     var app = document.getElementsByClassName("App");
@@ -22,12 +29,10 @@ const Header = () => {
     }
   }
 
-
   function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: "smooth" });
   }
-
 
   return (
     <div className="header">
@@ -37,24 +42,16 @@ const Header = () => {
       <div className="navright" id="myTopnav">
         <div className="navelt icon" onClick={myFunction}>
           <a href="#">
-            <FaBars></FaBars>
+            <FaBars />
           </a>
         </div>
-        <div className="navelt nicon">
-          <a href="#"  onClick={() => scrollToSection("home")}>Home</a>
-        </div>
-        <div className='navelt'>
-          <a href="#"  onClick={() => scrollToSection("about")}>About</a> 
-        </div>
-        <div className='navelt'>
-          <a href="#"  onClick={() => scrollToSection("projects")}>Projects</a> 
-        </div>
-        <div className='navelt'>
-          <a href="#"  onClick={() => scrollToSection("skills")}>Skills</a> 
-        </div>
-        <div className="navelt">
-          <a href="#" onClick={() => scrollToSection("footer")}>Contact</a>
-        </div>
+        {navLinks.map((link, index) => (
+          <div className="navelt" key={index}>
+            <a href="#" onClick={() => scrollToSection(link.sectionId)}>
+              {link.text}
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );
