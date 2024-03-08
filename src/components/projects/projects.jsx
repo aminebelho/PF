@@ -16,11 +16,17 @@ import pf2 from "../../assets/portfolio/pf2.png";
 import pf3 from "../../assets/portfolio/pf3.png";
 import pf4 from "../../assets/portfolio/pf4.png";
 import respPF from "../../assets/portfolio/respPF(1).mp4";
+import tgc1 from "../../assets/tgc/tgc1.png"
+import tgc2 from "../../assets/tgc/tgc2.png"
+import tgc3 from "../../assets/tgc/tgc3.png"
+import tgc4 from "../../assets/tgc/tgc4.png"
+import tgc5 from "../../assets/tgc/tgc5.png"
+import tgcVid from "../../assets/tgc/tgc.mov"
+
 
 const projectsData = [
   {
     id: 1,
-    time: 7000,
     name: "Portfolio",
     image: [pf1, pf2, pf3, pf4],
     video: respPF,
@@ -29,7 +35,6 @@ const projectsData = [
   },
   {
     id: 2,
-    time: 2000,
     name: "Web Application for Training Management",
     image: [
       home,
@@ -46,6 +51,14 @@ const projectsData = [
     description:
       "This website serves as a comprehensive platform for managing company trainings, covering both front-end and back-end functionalities. It allows users to oversee various aspects of training activities, ensuring efficient organization and tracking of training programs.",
   },
+  {
+    id: 3, 
+    name : "Web Application to support the palestinian cause", 
+    image: [tgc1, tgc2, tgc3, tgc4, tgc5],
+    video: tgcVid, 
+    descripton : "This website originated from an idea conceived during a hackathon focused on supporting Palestinians. The goal was to develop a platform exposing brands that are supporting the zionists in their actions and complicits of genocide and other atrocities against the Palestinians. By highlighting these brands, the website encourages users to boycott them and provides alternative options that do not support such atrocities. ",
+    
+  }
   // Add more project objects as needed
 ];
 
