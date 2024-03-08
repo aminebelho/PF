@@ -12,7 +12,6 @@ import plan from "../../assets/son/plan.png";
 import prevision from "../../assets/son/prevision.png";
 import tbf from "../../assets/son/tbf.png";
 import pf1 from "../../assets/portfolio/pf1.png";
-import pf2 from "../../assets/portfolio/pf2.png";
 import pf3 from "../../assets/portfolio/pf3.png";
 import pf4 from "../../assets/portfolio/pf4.png";
 import respPF from "../../assets/portfolio/respPF(1).mp4";
@@ -28,7 +27,7 @@ const projectsData = [
   {
     id: 1,
     name: "Portfolio",
-    image: [pf1, pf2, pf3, pf4],
+    image: [pf1, pf3, pf4],
     video: respPF,
     description:
       "Welcome to my personal portfolio website, where I showcase my skills, projects, and experience. Feel free to explore and learn more about my work.  If you have any questions or inquiries, don't hesitate to contact me. I'm here to help.",
@@ -56,7 +55,7 @@ const projectsData = [
     name : "Web Application to support the palestinian cause", 
     image: [tgc1, tgc2, tgc3, tgc4, tgc5],
     video: tgcVid, 
-    descripton : "This website originated from an idea conceived during a hackathon focused on supporting Palestinians. The goal was to develop a platform exposing brands that are supporting the zionists in their actions and complicits of genocide and other atrocities against the Palestinians. By highlighting these brands, the website encourages users to boycott them and provides alternative options that do not support such atrocities. ",
+    description : "This website originated from an idea conceived during a hackathon focused on supporting Palestinians. The goal was to develop a platform exposing brands that are supporting the zionists in their actions and complicits of genocide and other atrocities against the Palestinians. By highlighting these brands, the website encourages users to boycott them and provides alternative options that do not support such atrocities. ",
     
   }
   // Add more project objects as needed
