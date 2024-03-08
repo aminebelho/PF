@@ -253,6 +253,9 @@
 }
 
 @media screen and (max-width: 792px) {
+  #pj {
+    font-size: 1.6rem;
+  }
   .project-image{
     padding: 5% 0;
     max-width: 90%;
@@ -260,6 +263,9 @@
   .details {
     padding: 5% 0;
     max-width: 90%;
+  }
+  .details h2 {
+    font-size: 1.3rem;
   }
   .photos img {
     width: 48%;
@@ -280,4 +286,13 @@ padding: 5% 10%;
   font-size: small;
   transform: scale(1) translateX(20%) rotate(0deg);
 }
+.btn-class-name {
+  font-size: large;
+  font-weight: bold;
+  }
+  
+  .btn-class-name:hover svg {
+    font-size: small;
+    transform: scale(1) translateX(20%) rotate(0deg);
+  }
 }

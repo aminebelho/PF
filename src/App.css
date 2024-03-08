@@ -21,7 +21,7 @@ background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, F
   padding: 2%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 792px) {
   .content {
     margin: 2% 3%;
     padding: 1%;

@@ -9,9 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.about-wrapper{
-    height: 77vh;
-}
+
 .about-left{
     background: #12192c;
     /* height: 77vh; */
@@ -192,7 +190,7 @@ body{
     }
     .about-left-content{
         position: absolute;
-        width:70%
+        width:min-content;
     }
     .about-left-content h2 {
         margin: 0.6rem 0 0.6rem 0;

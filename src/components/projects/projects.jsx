@@ -90,7 +90,7 @@ const Projects = () => {
     <div className="projects">
       <div className="project">
         <div className="title">
-          <h1>Projects</h1>
+          <h1 id="pj">Projects</h1>
         </div>
         <div className="image-container">
           <img

@@ -23,6 +23,17 @@
     padding: 2% 1% 1% 1%;
     opacity: 0.8;
   }
+
+  .footer  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
   
   
   .iconsocials {
@@ -34,6 +45,7 @@
   }
 
   .iconsocials .text {
+    font-size: 90%;
     position: absolute;
     left: 50%;
     bottom: -5px;
@@ -56,14 +68,7 @@
     transform: rotate(-35deg) skew(20deg);
   }
   .linkedin span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #fff;
     border-radius: 5px;
-    transition: all 0.3s;
     color: #1da1f2;
     border-color: #1da1f2;
   }
@@ -128,26 +133,18 @@
   }
   
   .facebook span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    transition: all 0.3s;
+    color: #1877f2;
+    border-color: #1877f2;
   }
   
   .fbtxt {
     color: #1877f2;
   }
 
-  .facebook span {
-    color: #1877f2;
-    border-color: #1877f2;
-  }
   
   .iconsocials:hover .facebook span {
+    width: 100%;
+    height: 100%;
     box-shadow: -1px 1px 3px #1877f2;
   }
   
@@ -191,6 +188,10 @@
       #1877f2 100%
     );
   }
+  .facebookSVG svg {
+    width: 100%;
+    height: 100%;
+  }
 
   .iconsocials .whatsapp {
     width: 55px;
@@ -206,16 +207,6 @@
     box-shadow: 0 0 30px rgba(37, 211, 102, 1), 0 0 40px rgba(37, 211, 102, 0.7);
   }
   
-  .whatsapp span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    transition: all 0.3s;
-  }
   
   .whatsapptxt {
     color: #25D366;
@@ -227,6 +218,8 @@
   }
   
   .iconsocials:hover .whatsapp span {
+    width: 100%;
+    height: 100%;
     box-shadow: -1px 1px 3px #4dc247;
   }
   
@@ -282,16 +275,8 @@
   }
   
   .gmail span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* border: 1px solid #fff; */
-    border-radius: 5px;
-    transition: all 0.3s;
-    /* color: #D44638;
-    border-color: #D44638; */
+
+    border: 0 ;
   }
   
   .gmailtxt {
@@ -300,8 +285,11 @@
   
   
   .iconsocials:hover .gmail span {
+    width: 100%;
+    height: 100%;
     box-shadow: -1px 1px 3px #ff6b5c;
   }
+
   
   .iconsocials:hover .gmail span:nth-child(1) {
     opacity: 0.2;
@@ -335,6 +323,8 @@
     justify-content: center;
     /* background: #f8d3cf; */
   }
+
+
 
   .discord {
     width: 55px;
@@ -371,7 +361,9 @@
   }
   
   .iconsocials:hover .discord span {
+    width: 100%;
     box-shadow: -1px 1px 3px #8f9bff;
+    height: 100%;
   }
   
   .iconsocials:hover .discord span:nth-child(1) {
@@ -442,7 +434,8 @@
   }
   
   .iconsocials:hover .github span {
-    /* background-color: #fff; */
+    width: 100%;
+    height: 100%;
     box-shadow: -1px 1px 3px #ffffff;
   }
   
@@ -475,10 +468,28 @@
     background: #000;
   }
 
+  .gmailSVG:hover svg {
+    width: 80%;
+    height: 80%;
+  }
+  .gmail span:hover svg {
+    width: 80%;
+    height: 80%;
+  }
+
   @media only screen and (max-width: 792px) {
+
+    .linkedin span, .facebook span, .github span , .gmail span, .whatsapp span, .discord span{
+      width: 80%;
+      height: 80%;
+    }
+    .github span, .whatsapp span {
+      display: flex;
+    }
 
     .footer p{
       padding: 10% 1% 1% 1%;
+      font-size: small;
     }
     .iconsocials {
       font-size: 16px;
@@ -490,7 +501,7 @@
       font-size: 20px;
       line-height: 44px;
     }
-    .linkedin {
+    .linkedin, .gmail {
       width: 44px;
       height: 44px;
     }
@@ -499,26 +510,16 @@
       font-size: 20px;
       line-height: 44px;
     }
-    .gmail {
-      width: 44px;
-      height: 44px;
+    
+    .gmailSVG:hover svg {
+      width: 80%;
+      height: 80%;
     }
 
-    .iconsocials .facebook {
-      width: 44px;
-      height: 44px;
-  }
-  .iconsocials .whatsapp {
-    width: 44px;
-    height: 44px;
-}
-.iconsocials .discord {
-  width: 44px;
-  height: 44px;
-}
-.iconsocials .github {
-  width: 44px;
-  height: 44px;
-}
+    .iconsocials .facebook, .iconsocials .whatsapp, .iconsocials .discord, .iconsocials .github {
+      width: 80%;
+      height: 80%;
+    }
+
 
   }

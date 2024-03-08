@@ -43,7 +43,7 @@ function skills() {
   return (
     <div className="skills">
       <div className="title">
-        <h1>Skills</h1>
+        <h1 id="pj">Skills</h1>
       </div>
       <div className="desc">
         <p>
