@@ -6,12 +6,14 @@ import Portfolio from './components/portfolio/portfolio'
 function App() {
 
   return (
-    <div className='App'>
+    <div className='App' id='home'>
       <Header></Header>
       <div className='content'>
       <Portfolio></Portfolio>
       </div>
+      <div id='footer'>
       <Footer></Footer>
+      </div>
     </div>
     
   )

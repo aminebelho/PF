@@ -9,22 +9,18 @@ const Portfolio = () => {
     <div className='portfolio'>
       {/* Add div s for your projects, skills, experience, etc. */}
 
-      <div className='section abtsct'>
-        {/* <h2>About</h2> */}
+      <div className='section' id='about'> {/* Add id to the About section */}
         <About></About>
-      </div >
+      </div>
+
      
-      <div className='section prj'>
+      <div className='section prj' id='projects'>
         <Projects></Projects>
       </div >
  
-      <div className='section'>
+      <div className='section' id='skills'>
         <Skills></Skills>
       </div >
-{/* 
-      <div className='section'>
-        <h2>Resume</h2>
-      </div > */}
 
       {/* Add more div s as needed */}
     </div>

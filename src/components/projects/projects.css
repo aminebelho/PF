@@ -265,4 +265,19 @@
     width: 48%;
     padding: 1%;
 }
+
+.see-more{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.btn-see-more {
+font-size: small;
+padding: 5% 10%;
+}
+
+.btn-see-more:hover svg {
+  font-size: small;
+  transform: scale(1) translateX(20%) rotate(0deg);
+}
 }
